@@ -1,0 +1,59 @@
+# Project: framework
+# Makefile created by Dev-C++ 4.9.9.0
+
+CPP  = g++.exe -D__DEBUG__
+CC   = gcc.exe -D__DEBUG__
+WINDRES = windres.exe
+RES  = framework_private.res
+OBJ  = main.o core.o graphics.o audio.o maps.o game.o player.o ghost.o search.o high.o $(RES)
+LINKOBJ  = main.o core.o graphics.o audio.o maps.o game.o player.o ghost.o search.o high.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" -L"C:/SDL-1.2.13/lib" -mwindows -lSDL_ttf -lSDL_mixer -lSDL -lSDLmain -lSDL_image -lmingw32  -g3 
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/include/c++/3.3.1"  -I"C:/Dev-Cpp/include/c++/3.3.1/mingw32"  -I"C:/Dev-Cpp/include/c++/3.3.1/backward"  -I"C:/Dev-Cpp/lib/gcc-lib/mingw32/3.3.1/include"  -I"C:/Dev-Cpp/include"  -I"C:/SDL-1.2.13/include" 
+BIN  = framework.exe
+CXXFLAGS = $(CXXINCS)   -g3
+CFLAGS = $(INCS)   -g3
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before framework.exe all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "framework.exe" $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+core.o: core.cpp
+	$(CPP) -c core.cpp -o core.o $(CXXFLAGS)
+
+graphics.o: graphics.cpp
+	$(CPP) -c graphics.cpp -o graphics.o $(CXXFLAGS)
+
+audio.o: audio.cpp
+	$(CPP) -c audio.cpp -o audio.o $(CXXFLAGS)
+
+maps.o: maps.cpp
+	$(CPP) -c maps.cpp -o maps.o $(CXXFLAGS)
+
+game.o: game.cpp
+	$(CPP) -c game.cpp -o game.o $(CXXFLAGS)
+
+player.o: player.cpp
+	$(CPP) -c player.cpp -o player.o $(CXXFLAGS)
+
+ghost.o: ghost.cpp
+	$(CPP) -c ghost.cpp -o ghost.o $(CXXFLAGS)
+
+search.o: search.cpp
+	$(CPP) -c search.cpp -o search.o $(CXXFLAGS)
+
+high.o: high.cpp
+	$(CPP) -c high.cpp -o high.o $(CXXFLAGS)
+
+framework_private.res: framework_private.rc 
+	$(WINDRES) -i framework_private.rc -I rc -o framework_private.res -O coff 

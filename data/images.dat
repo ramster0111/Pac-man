@@ -1,0 +1,44 @@
+# This file defines all the images loaded by the game
+# They are assigned in a static array and limited to 128 images by default
+#
+# If you need to re-assign the upper limit, you need to edit IMAGE_COUNT
+# field in config.h and recompile the game
+
+# Syntax to define an image
+# [image_number] [image_file_path] [alpha]
+# Alpha has to be set to 0 all the time, unless your image has
+# a transparency layer in which case you have to set alpha to 1
+
+# Make sure the image number you enter here DO NOT interfere with those
+# define in the bitmap image ressource definition file !!!
+
+[12]	[data/img/r.png]	[1]
+[13]	[data/img/rs.png]	[1]
+[14]	[data/img/brick.png]	[0]
+[17]	[data/img/back.png]	[1]
+[15]	[data/img/pill1.png]	[1]
+[16]	[data/img/dot.png]	[1]
+[18]	[data/img/gwall.png]	[0]
+[19]	[data/img/gent.png]	[1]
+[20]	[data/img/wg.png]	[1]
+[21]	[data/img/temp.png]	[0]
+[22]	[data/img/pg.png]	[1]
+[23]	[data/img/rg.png]	[1]
+[24]	[data/img/og.png]	[1]
+[25]	[data/img/bg.png]	[1]
+[26]	[data/img/pu.png]	[0]
+[27]	[data/img/pd.png]	[0]
+[28]	[data/img/pl.png]	[0]
+[29]	[data/img/pr.png]	[0]
+[30]	[data/img/temp1.png]	[0]
+[31]	[data/img/ge.png]	[1]
+[32]	[data/img/ri.png]	[1]
+[33]	[data/img/ra.png]	[1]
+[34]	[data/img/pa.png]	[1]
+[35]	[data/img/r2.png]	[1]
+[36]	[data/img/logo.png]	[1]
+[37]	[data/img/l1.png]	[1]
+[38]	[data/img/l2.png]	[1]
+[39]	[data/img/l3.png]	[1]
+[40]	[data/img/l4.png]	[1]
+[41]	[data/img/l5.png]	[1]

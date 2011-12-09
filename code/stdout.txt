@@ -1,0 +1,32 @@
+Opening image data config file
+==========================================
+	Loading image 'data/img/mainscr.jpg' to cell [12]
+	Loading image 'data/img/tux.png' to cell [11] using its alpha channel
+	Loading image 'data/img/wall.png' to cell [13]
+	Loading image 'data/img/dot.png' to cell [14]
+	Loading image 'data/img/gwall.png' to cell [15]
+	Loading image 'data/img/temp.png' to cell [16]
+	Loading image 'data/img/back.png' to cell [17]
+
+
+Opening WAV audio config file
+==========================================
+	Loading sound 'data/sound/online.wav' to cell [0]
+
+
+Opening image data config file
+==========================================
+	Loading image 'data/img/mainscr.jpg' to cell [12]
+	Loading image 'data/img/tux.png' to cell [11] using its alpha channel
+	Loading image 'data/img/wall.png' to cell [13]
+	Loading image 'data/img/dot.png' to cell [14]
+	Loading image 'data/img/gwall.png' to cell [15]
+	Loading image 'data/img/temp.png' to cell [16]
+	Loading image 'data/img/back.png' to cell [17]
+
+
+Opening WAV audio config file
+==========================================
+	Loading sound 'data/sound/online.wav' to cell [0]
+
+

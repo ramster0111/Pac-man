@@ -1,0 +1,12 @@
+# This file defines all the sounds loaded by the game
+
+# Syntax to define a sound
+# [sound_number] [sound_path]
+#
+# The audio sample format must be 16 bits audio
+
+[0]	[data/sound/online.wav]
+[1]	[data/sound/begin.wav]
+[2]	[data/sound/chop.wav]
+[3]	[data/sound/killed.wav]
+
